@@ -1,4 +1,4 @@
-
+// Resuming this project
 const linkCategory = document.getElementById("linkCategory"); // gets the DOM element
 
 const submitBtn = document.getElementById("submitButton");
@@ -35,7 +35,7 @@ linkCategory.addEventListener('keydown', function(event) {
         event.preventDefault(); // prevents what happens by default which is to show comma when pressed
 
         linkCategories.push(linkCategory.value); // add category to the array
-        
+
         linkCategory.value = ''; // empties the input text box
 
         // display the categories on the screen
@@ -68,12 +68,12 @@ submitBtn.addEventListener('click', (event) => { // => DEFINES AN ARROW FUNCTION
     console.log(newLink);
 
     // ADDING LINK TO THE ARRAY OF LINKS
-    links.push(newLink); 
+    links.push(newLink);
 
     // EMPTYING ALL THE INPUT TEXT BOXES AND THE LINK CATEGORIES SECTION
     linkTitle.value = '';
     linkUrl.value = '';
-    linkCategory.value = '';    
+    linkCategory.value = '';
     linkCategories = [];
 
     displayCategories();
